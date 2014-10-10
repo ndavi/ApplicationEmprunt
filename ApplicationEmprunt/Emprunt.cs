@@ -12,11 +12,30 @@ namespace ApplicationEmprunt
         #region Accesseurs
         private double capital;
         private double taux;
+        private double ki = 0;
+        private double ami;
+        private double i;
+
+        public double I
+        {
+            get { return i; }
+            set { i = value; }
+        }
 
         public double Taux
         {
             get { return taux; }
             set { taux = value; }
+        }
+        public double Ami
+        {
+            get { return ami; }
+            set { ami = value; }
+        }
+        public double Ki
+        {
+            get { return ki; }
+            set { ki = value; }
         }
 
         private double duree;
@@ -103,6 +122,15 @@ namespace ApplicationEmprunt
                 (1.0 - (Math.Pow(1 + tauxMois, -dureeMois)));
             this.echeanceTrimestre = (capital * tauxTrimestre) /
                 (1.0 - (Math.Pow(1 + tauxTrimestre, -dureeTrimestre)));
+        }
+        public void calculerDataGrid()
+        {
+            if(this.ki == 0)
+                this.ki = this.capital;
+            else
+                this.ki = this.ki - this.ami;
+            this.i = this.tauxMois * this.ki;
+            this.ami = this.echeanceMois - this.i;
         }
 
         // A = K x r / 1 - (1 + r)-^N

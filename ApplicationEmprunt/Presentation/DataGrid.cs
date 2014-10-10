@@ -15,11 +15,14 @@ namespace ApplicationEmprunt.Presentation
         public DataGrid(Emprunt unEmprunt)
         {
             InitializeComponent();
+            LoadData(unEmprunt);
         }
 
-        public void LoadData()
+        public void LoadData(Emprunt unEmprunt)
         {
             this.dgv.Rows.Clear();
+            unEmprunt.calculerDataGrid();
+            this.dgv.Rows.Add(unEmprunt.Ami,unEmprunt.I,unEmprunt.Ami,"",unEmprunt.Ki);
         }
     }
 }
