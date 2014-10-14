@@ -35,7 +35,9 @@
             this.nouvelEmpruntToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.resultatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuAcceuil.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuAcceuil
@@ -62,6 +64,7 @@
             this.quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
             this.quitterToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.quitterToolStripMenuItem.Text = "Quitter";
+            this.quitterToolStripMenuItem.Click += new System.EventHandler(this.quitterToolStripMenuItem_Click);
             // 
             // empruntToolStripMenuItem
             // 
@@ -97,17 +100,28 @@
             this.dataGridToolStripMenuItem.Text = "DataGrid";
             this.dataGridToolStripMenuItem.Click += new System.EventHandler(this.dataGridToolStripMenuItem_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ApplicationEmprunt.Properties.Resources.article;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 27);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(346, 294);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // Index
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(346, 320);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuAcceuil);
             this.MainMenuStrip = this.menuAcceuil;
             this.Name = "Index";
             this.Text = "Index";
             this.menuAcceuil.ResumeLayout(false);
             this.menuAcceuil.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -122,5 +136,6 @@
         private System.Windows.Forms.ToolStripMenuItem resultatToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dataGridToolStripMenuItem;
         public System.Windows.Forms.MenuStrip menuAcceuil;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

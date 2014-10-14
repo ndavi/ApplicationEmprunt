@@ -22,3 +22,5 @@ C:\Users\Swagatropswag\Downloads\ApplicationEmprunt\ApplicationEmprunt\Applicati
 C:\Users\Swagatropswag\Downloads\ApplicationEmprunt\ApplicationEmprunt\ApplicationEmprunt\obj\Debug\ApplicationEmprunt.csproj.GenerateResource.Cache
 C:\Users\Swagatropswag\Downloads\ApplicationEmprunt\ApplicationEmprunt\ApplicationEmprunt\bin\Debug\ApplicationEmprunt.exe
 C:\Users\Swagatropswag\Downloads\ApplicationEmprunt\ApplicationEmprunt\ApplicationEmprunt\bin\Debug\ApplicationEmprunt.pdb
+H:\SI7\C#\ApplicationEmprunt\ApplicationEmprunt\bin\Debug\ClassLibrary1.dll
+H:\SI7\C#\ApplicationEmprunt\ApplicationEmprunt\bin\Debug\ClassLibrary1.pdb

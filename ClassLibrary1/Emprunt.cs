@@ -39,6 +39,13 @@ namespace ApplicationEmprunt
         }
 
         private double duree;
+
+        public double Duree
+        {
+            get { return duree; }
+            set { duree = value; }
+        }
+
         private double tauxMois, tauxTrimestre, tauxSemaine;
 
         public double TauxSemaine
@@ -87,6 +94,24 @@ namespace ApplicationEmprunt
 
         private double dureeMois, dureeSemaine, dureeTrimestre;
 
+        public double DureeTrimestre
+        {
+            get { return dureeTrimestre; }
+            set { dureeTrimestre = value; }
+        }
+
+        public double DureeSemaine
+        {
+            get { return dureeSemaine; }
+            set { dureeSemaine = value; }
+        }
+
+        public double DureeMois
+        {
+            get { return dureeMois; }
+            set { dureeMois = value; }
+        }
+
         #endregion
 
         public Emprunt(Double capital,Double taux, Double duree)
@@ -99,21 +124,21 @@ namespace ApplicationEmprunt
             calculerEmprunt();
         }
 
-        public void equivalenceTaux()
+        private void equivalenceTaux()
         {
                 this.tauxMois = (Math.Pow(this.taux + 1.0, 1.0 / 12.0)) - 1.0;
                 this.tauxSemaine = (Math.Pow(this.taux + 1.0, 1.0 / 52.0)) - 1.0;
                 this.tauxTrimestre = (Math.Pow(this.taux + 1.0, 1.0 / 4.0)) - 1.0;
         }
 
-        public void equivalenceDuree()
+        private void equivalenceDuree()
         {
             this.dureeMois = this.duree * 12;
             this.dureeSemaine = this.duree * 52;
             this.dureeTrimestre = this.duree * 4;
         }
 
-        public void calculerEmprunt()
+        private void calculerEmprunt()
         {
             this.echeanceAnnee = (capital * taux) / (1.0 - (Math.Pow(1 + taux, -duree)));
             this.echeanceSemaine = (capital * tauxSemaine) /
@@ -123,16 +148,48 @@ namespace ApplicationEmprunt
             this.echeanceTrimestre = (capital * tauxTrimestre) /
                 (1.0 - (Math.Pow(1 + tauxTrimestre, -dureeTrimestre)));
         }
+        public void reinitialiserDataGrid()
+        {
+            this.ki = 0;
+            this.ami = 0;
+            this.i = 0;
+        }
         public void calculerDataGrid()
         {
-            if(this.ki == 0)
+            if (this.ki == 0)
+                this.ki = this.capital;
+            else
+                this.ki = this.ki - this.ami;
+            this.i = this.taux * this.ki;
+            this.ami = this.echeanceAnnee - this.i;
+        }
+        public void calculerDataGridMois()
+        {
+            if (this.ki == 0)
                 this.ki = this.capital;
             else
                 this.ki = this.ki - this.ami;
             this.i = this.tauxMois * this.ki;
             this.ami = this.echeanceMois - this.i;
         }
-
+        public void calculerDataGridTrimestre()
+        {
+            if (this.ki == 0)
+                this.ki = this.capital;
+            else
+                this.ki = this.ki - this.ami;
+            this.i = this.tauxTrimestre * this.ki;
+            this.ami = this.echeanceTrimestre - this.i;
+        }
+        public void calculerDataGridSemaine()
+        {
+            if (this.ki == 0)
+                this.ki = this.capital;
+            else
+                this.ki = this.ki - this.ami;
+            this.i = this.tauxSemaine * this.ki;
+            this.ami = this.echeanceSemaine - this.i;
+        }
         // A = K x r / 1 - (1 + r)-^N
 
         // Equivalence : lm = (lq + 1)^1/K - 1

@@ -32,23 +32,28 @@ namespace ApplicationEmprunt.Presentation
 
         private void dataGridToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DataGrid dgv = new DataGrid(UnEmprunt);
+            DataGrid dgv = new DataGrid(unEmprunt);
             dgv.Show();
         }
 
         private void resultatToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Resultat r = new Resultat(UnEmprunt);
+            Resultat r = new Resultat(unEmprunt);
             r.Show();
         }
 
         private void empruntToolStripMenuItem_MouseEnter(object sender, EventArgs e)
         {
-            if (UnEmprunt != null)
+            if (unEmprunt != null)
             {
                 resultatToolStripMenuItem.Enabled = true;
                 dataGridToolStripMenuItem.Enabled = true;
             }
+        }
+
+        private void quitterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
 

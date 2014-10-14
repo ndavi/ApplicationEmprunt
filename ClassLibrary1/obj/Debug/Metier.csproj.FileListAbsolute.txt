@@ -1,0 +1,4 @@
+H:\SI7\C#\ApplicationEmprunt\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+H:\SI7\C#\ApplicationEmprunt\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+H:\SI7\C#\ApplicationEmprunt\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+H:\SI7\C#\ApplicationEmprunt\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

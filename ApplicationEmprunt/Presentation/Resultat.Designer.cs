@@ -44,12 +44,17 @@
             this.lbl_echeance_trimestre = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lbl_echeance_annee = new System.Windows.Forms.Label();
+            this.btn_fermer = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(41, 72);
+            this.label1.Location = new System.Drawing.Point(46, 91);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(139, 13);
             this.label1.TabIndex = 0;
@@ -67,7 +72,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(41, 158);
+            this.label3.Location = new System.Drawing.Point(39, 145);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(156, 13);
             this.label3.TabIndex = 2;
@@ -76,7 +81,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(41, 39);
+            this.label4.Location = new System.Drawing.Point(66, 65);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(86, 13);
             this.label4.TabIndex = 3;
@@ -85,7 +90,7 @@
             // lbl_taux_annee
             // 
             this.lbl_taux_annee.AutoSize = true;
-            this.lbl_taux_annee.Location = new System.Drawing.Point(215, 39);
+            this.lbl_taux_annee.Location = new System.Drawing.Point(15, 35);
             this.lbl_taux_annee.Name = "lbl_taux_annee";
             this.lbl_taux_annee.Size = new System.Drawing.Size(79, 13);
             this.lbl_taux_annee.TabIndex = 4;
@@ -94,7 +99,7 @@
             // lbl_taux_mois
             // 
             this.lbl_taux_mois.AutoSize = true;
-            this.lbl_taux_mois.Location = new System.Drawing.Point(215, 72);
+            this.lbl_taux_mois.Location = new System.Drawing.Point(15, 61);
             this.lbl_taux_mois.Name = "lbl_taux_mois";
             this.lbl_taux_mois.Size = new System.Drawing.Size(70, 13);
             this.lbl_taux_mois.TabIndex = 5;
@@ -103,7 +108,7 @@
             // lbl_taux_semaine
             // 
             this.lbl_taux_semaine.AutoSize = true;
-            this.lbl_taux_semaine.Location = new System.Drawing.Point(215, 119);
+            this.lbl_taux_semaine.Location = new System.Drawing.Point(15, 89);
             this.lbl_taux_semaine.Name = "lbl_taux_semaine";
             this.lbl_taux_semaine.Size = new System.Drawing.Size(88, 13);
             this.lbl_taux_semaine.TabIndex = 6;
@@ -112,7 +117,7 @@
             // lbl_taux_trimestre
             // 
             this.lbl_taux_trimestre.AutoSize = true;
-            this.lbl_taux_trimestre.Location = new System.Drawing.Point(215, 158);
+            this.lbl_taux_trimestre.Location = new System.Drawing.Point(15, 115);
             this.lbl_taux_trimestre.Name = "lbl_taux_trimestre";
             this.lbl_taux_trimestre.Size = new System.Drawing.Size(88, 13);
             this.lbl_taux_trimestre.TabIndex = 7;
@@ -148,7 +153,7 @@
             // lbl_echeance_mois
             // 
             this.lbl_echeance_mois.AutoSize = true;
-            this.lbl_echeance_mois.Location = new System.Drawing.Point(215, 213);
+            this.lbl_echeance_mois.Location = new System.Drawing.Point(40, 13);
             this.lbl_echeance_mois.Name = "lbl_echeance_mois";
             this.lbl_echeance_mois.Size = new System.Drawing.Size(98, 13);
             this.lbl_echeance_mois.TabIndex = 11;
@@ -157,7 +162,7 @@
             // lbl_echeance_semaine
             // 
             this.lbl_echeance_semaine.AutoSize = true;
-            this.lbl_echeance_semaine.Location = new System.Drawing.Point(233, 250);
+            this.lbl_echeance_semaine.Location = new System.Drawing.Point(40, 50);
             this.lbl_echeance_semaine.Name = "lbl_echeance_semaine";
             this.lbl_echeance_semaine.Size = new System.Drawing.Size(116, 13);
             this.lbl_echeance_semaine.TabIndex = 12;
@@ -166,7 +171,7 @@
             // lbl_echeance_trimestre
             // 
             this.lbl_echeance_trimestre.AutoSize = true;
-            this.lbl_echeance_trimestre.Location = new System.Drawing.Point(233, 286);
+            this.lbl_echeance_trimestre.Location = new System.Drawing.Point(40, 86);
             this.lbl_echeance_trimestre.Name = "lbl_echeance_trimestre";
             this.lbl_echeance_trimestre.Size = new System.Drawing.Size(116, 13);
             this.lbl_echeance_trimestre.TabIndex = 13;
@@ -184,35 +189,70 @@
             // lbl_echeance_annee
             // 
             this.lbl_echeance_annee.AutoSize = true;
-            this.lbl_echeance_annee.Location = new System.Drawing.Point(233, 324);
+            this.lbl_echeance_annee.Location = new System.Drawing.Point(40, 124);
             this.lbl_echeance_annee.Name = "lbl_echeance_annee";
             this.lbl_echeance_annee.Size = new System.Drawing.Size(107, 13);
             this.lbl_echeance_annee.TabIndex = 15;
             this.lbl_echeance_annee.Text = "lbl_echeance_annee";
+            // 
+            // btn_fermer
+            // 
+            this.btn_fermer.Location = new System.Drawing.Point(362, 34);
+            this.btn_fermer.Name = "btn_fermer";
+            this.btn_fermer.Size = new System.Drawing.Size(75, 23);
+            this.btn_fermer.TabIndex = 16;
+            this.btn_fermer.Text = "Fermer";
+            this.btn_fermer.UseVisualStyleBackColor = true;
+            this.btn_fermer.Click += new System.EventHandler(this.btn_fermer_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.lbl_echeance_mois);
+            this.groupBox1.Controls.Add(this.lbl_echeance_semaine);
+            this.groupBox1.Controls.Add(this.lbl_echeance_annee);
+            this.groupBox1.Controls.Add(this.lbl_echeance_trimestre);
+            this.groupBox1.Location = new System.Drawing.Point(236, 200);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(201, 151);
+            this.groupBox1.TabIndex = 17;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Echeances";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.lbl_taux_trimestre);
+            this.groupBox2.Controls.Add(this.lbl_taux_semaine);
+            this.groupBox2.Controls.Add(this.lbl_taux_mois);
+            this.groupBox2.Controls.Add(this.lbl_taux_annee);
+            this.groupBox2.Location = new System.Drawing.Point(201, 30);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(153, 141);
+            this.groupBox2.TabIndex = 18;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Taux";
             // 
             // Resultat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(464, 373);
-            this.Controls.Add(this.lbl_echeance_annee);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.btn_fermer);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.lbl_echeance_trimestre);
-            this.Controls.Add(this.lbl_echeance_semaine);
-            this.Controls.Add(this.lbl_echeance_mois);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.lbl_taux_trimestre);
-            this.Controls.Add(this.lbl_taux_semaine);
-            this.Controls.Add(this.lbl_taux_mois);
-            this.Controls.Add(this.lbl_taux_annee);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Resultat";
             this.Text = "Resultat";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -236,5 +276,8 @@
         private System.Windows.Forms.Label lbl_echeance_trimestre;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lbl_echeance_annee;
+        private System.Windows.Forms.Button btn_fermer;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }
