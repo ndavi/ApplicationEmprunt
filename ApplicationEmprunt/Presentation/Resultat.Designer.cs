@@ -90,7 +90,7 @@
             // lbl_taux_annee
             // 
             this.lbl_taux_annee.AutoSize = true;
-            this.lbl_taux_annee.Location = new System.Drawing.Point(15, 35);
+            this.lbl_taux_annee.Location = new System.Drawing.Point(32, 35);
             this.lbl_taux_annee.Name = "lbl_taux_annee";
             this.lbl_taux_annee.Size = new System.Drawing.Size(79, 13);
             this.lbl_taux_annee.TabIndex = 4;
@@ -99,7 +99,7 @@
             // lbl_taux_mois
             // 
             this.lbl_taux_mois.AutoSize = true;
-            this.lbl_taux_mois.Location = new System.Drawing.Point(15, 61);
+            this.lbl_taux_mois.Location = new System.Drawing.Point(33, 61);
             this.lbl_taux_mois.Name = "lbl_taux_mois";
             this.lbl_taux_mois.Size = new System.Drawing.Size(70, 13);
             this.lbl_taux_mois.TabIndex = 5;
@@ -108,7 +108,7 @@
             // lbl_taux_semaine
             // 
             this.lbl_taux_semaine.AutoSize = true;
-            this.lbl_taux_semaine.Location = new System.Drawing.Point(15, 89);
+            this.lbl_taux_semaine.Location = new System.Drawing.Point(32, 89);
             this.lbl_taux_semaine.Name = "lbl_taux_semaine";
             this.lbl_taux_semaine.Size = new System.Drawing.Size(88, 13);
             this.lbl_taux_semaine.TabIndex = 6;
@@ -117,7 +117,7 @@
             // lbl_taux_trimestre
             // 
             this.lbl_taux_trimestre.AutoSize = true;
-            this.lbl_taux_trimestre.Location = new System.Drawing.Point(15, 115);
+            this.lbl_taux_trimestre.Location = new System.Drawing.Point(32, 115);
             this.lbl_taux_trimestre.Name = "lbl_taux_trimestre";
             this.lbl_taux_trimestre.Size = new System.Drawing.Size(88, 13);
             this.lbl_taux_trimestre.TabIndex = 7;
@@ -153,7 +153,7 @@
             // lbl_echeance_mois
             // 
             this.lbl_echeance_mois.AutoSize = true;
-            this.lbl_echeance_mois.Location = new System.Drawing.Point(40, 13);
+            this.lbl_echeance_mois.Location = new System.Drawing.Point(40, 16);
             this.lbl_echeance_mois.Name = "lbl_echeance_mois";
             this.lbl_echeance_mois.Size = new System.Drawing.Size(98, 13);
             this.lbl_echeance_mois.TabIndex = 11;

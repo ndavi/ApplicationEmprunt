@@ -36,6 +36,7 @@
             this.txt_taux = new System.Windows.Forms.TextBox();
             this.txt_duree = new System.Windows.Forms.TextBox();
             this.btn_valider = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -90,7 +91,7 @@
             // 
             this.txt_taux.Location = new System.Drawing.Point(204, 163);
             this.txt_taux.Name = "txt_taux";
-            this.txt_taux.Size = new System.Drawing.Size(100, 20);
+            this.txt_taux.Size = new System.Drawing.Size(58, 20);
             this.txt_taux.TabIndex = 5;
             this.txt_taux.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_taux_KeyPress);
             // 
@@ -112,11 +113,21 @@
             this.btn_valider.UseVisualStyleBackColor = true;
             this.btn_valider.Click += new System.EventHandler(this.btn_valider_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(268, 166);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(15, 13);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "%";
+            // 
             // Saisie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(389, 331);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.btn_valider);
             this.Controls.Add(this.txt_duree);
             this.Controls.Add(this.txt_taux);
@@ -143,6 +154,7 @@
         private System.Windows.Forms.TextBox txt_taux;
         private System.Windows.Forms.TextBox txt_duree;
         private System.Windows.Forms.Button btn_valider;
+        private System.Windows.Forms.Label label5;
     }
 }
 
